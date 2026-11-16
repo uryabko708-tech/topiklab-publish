@@ -142,8 +142,8 @@ def main():
     changed = False
     for it in sched:
         key = it["id"]
-        if state.get(key, {}).get("ok"):
-            continue
+        if state.get(key, {}).get("ok") or it.get("hold"):
+            continue  # hold: ролик ещё правится, не публиковать
         at = datetime.fromisoformat(it["time"]).replace(tzinfo=KST)
         if DRY:
             print(f"{at:%d.%m %H:%M} {it['account']:5} {it['type']:8} {key}  media={len(it.get('media', []))}")

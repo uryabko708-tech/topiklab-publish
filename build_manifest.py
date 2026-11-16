@@ -6,7 +6,7 @@ python3 build_manifest.py "../Выкладка/Неделя 17-23.11" [--threads
 - mp4 перепаковываются с faststart (без перекодирования), обложки PNG → JPEG.
 Выводит таблицу: что куда и когда; неподобранные заголовки печатает как ОШИБКА.
 """
-import json, re, subprocess, sys
+import hashlib, json, re, subprocess, sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 YEAR = 2026
 HDR = re.compile(r"^(.*)\((\d{2})\.(\d{2}), (\d{2}):(\d{2})\)\s*$")
 # слова заголовка → слово в имени файла
-MATCH = [("Карусель", None), ("Carousel", None),
+MATCH = [("фанатов K-pop", "Таймер кейпоп"), ("K-pop fan words", "Таймер кейпоп"), ("Карусель", None), ("Carousel", None),
          ("День 4", "День 4"), ("Day 4", "Day 4"), ("День 5", "День 5"), ("Day 5", "Day 5"),
          ("День 6", "День 6"), ("Day 6", "Day 6"), ("День 7", "День 7"), ("Day 7", "Day 7"),
          ("до экзамена", "до экзамена"), ("plenty of time", "plenty of time"),
@@ -82,6 +82,7 @@ def jpeg(src, dst):
 def main():
     week = Path(sys.argv[1]).resolve()
     skip = sys.argv[sys.argv.index("--skip") + 1].split(",") if "--skip" in sys.argv else []
+    holds = [h.strip().lower() for h in sys.argv[sys.argv.index("--hold") + 1].split(",")] if "--hold" in sys.argv else []
     tag = week.name.split()[-1]  # 17-23.11
     sched, bad, n = [], 0, 0
     for day in sorted((p for p in week.iterdir() if p.is_dir() and re.fullmatch(r"\d{2}\.\d{2}", p.name)), key=lambda p: p.name[::-1]):
@@ -97,7 +98,7 @@ def main():
                     bad += 1
                     continue
                 n += 1
-                iid = f"w{tag}-{day.name}-{lang.lower()}-{n:02d}"
+                iid = f"w{tag}-{day.name}-{lang.lower()}-" + hashlib.md5(b["title"].encode()).hexdigest()[:6]  # стабильный id: дата + язык + заголовок
                 dt = b["dt"] + (timedelta(minutes=30) if kind == "carousel" else timedelta())
                 rel = f"media/{tag}/{iid}"
                 media, cover = [], None
@@ -121,6 +122,8 @@ def main():
                         "title": b["title"], "caption": b["caption"], "media": media}
                 if cover:
                     item["cover"] = cover
+                if any(h in b["title"].lower() for h in holds):
+                    item["hold"] = True
                 sched.append(item)
                 print(f"{dt:%d.%m %H:%M} {acc} {kind:8} {b['title'][:40]:40} ← {files[0].parent.name}/{files[0].name}")
     if "--threads" in sys.argv:
@@ -161,7 +164,7 @@ def threads(md, tag, skip):
         if c["account"] in skip:
             continue
         text = "\n".join(c["lines"]).strip()
-        res.append({"id": f"w{tag}-{c['account']}-{i:02d}", "account": c["account"], "type": "text",
+        res.append({"id": f"w{tag}-{c['account']}-{c['time']:%d%m%H%M}", "account": c["account"], "type": "text",
                     "time": c["time"].isoformat(timespec="minutes"), "topic": c["topic"], "caption": text})
         print(f"{c['time']:%d.%m %H:%M} {c['account']} text     {text[:50]}")
     return res
