@@ -120,6 +120,10 @@ def main():
             continue
         if at > now or now - at > WINDOW:
             continue
+        a = it["account"].upper()
+        if not (os.environ.get(f"{a}_ID") and os.environ.get(f"{a}_TOKEN") and os.environ.get("MEDIA_BASE")):
+            print(f"пропуск {key}: нет ключей для {a}, жду (попытка не считается)")
+            continue
         tries = state.get(key, {}).get("tries", 0)
         if tries >= 3:
             continue
