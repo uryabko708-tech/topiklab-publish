@@ -1,0 +1,40 @@
+name: publish
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish due posts
+        env:
+          MEDIA_BASE: ${{ vars.MEDIA_BASE }}
+          IG_RU_ID: ${{ secrets.IG_RU_ID }}
+          IG_RU_TOKEN: ${{ secrets.IG_RU_TOKEN }}
+          IG_EN_ID: ${{ secrets.IG_EN_ID }}
+          IG_EN_TOKEN: ${{ secrets.IG_EN_TOKEN }}
+          TH_RU_ID: ${{ secrets.TH_RU_ID }}
+          TH_RU_TOKEN: ${{ secrets.TH_RU_TOKEN }}
+          TH_EN_ID: ${{ secrets.TH_EN_ID }}
+          TH_EN_TOKEN: ${{ secrets.TH_EN_TOKEN }}
+        run: python publish.py
+      - name: Save state
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "topiklab-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add state.json
+            git commit -m "state: published posts"
+            git push
+          fi
