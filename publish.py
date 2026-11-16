@@ -43,10 +43,15 @@ def media_url(path):
     return base + "/" + urllib.parse.quote(path)
 
 
+def ig_base(tok):
+    """IGAA… (вход через Instagram) → graph.instagram.com; EAA… (системный пользователь) → graph.facebook.com."""
+    return "https://graph.facebook.com/v23.0" if tok.startswith("EAA") else IG
+
+
 def ig_wait(cid, tok, limit=600):
     t0 = time.time()
     while time.time() - t0 < limit:
-        s = call("GET", f"{IG}/{cid}", {"fields": "status_code,status", "access_token": tok})
+        s = call("GET", f"{ig_base(tok)}/{cid}", {"fields": "status_code,status", "access_token": tok})
         if s.get("status_code") == "FINISHED":
             return
         if s.get("status_code") in ("ERROR", "EXPIRED"):
@@ -58,28 +63,29 @@ def ig_wait(cid, tok, limit=600):
 def post_ig(item):
     uid, tok = creds(item["account"])
     cap = item.get("caption", "")
+    IGB = ig_base(tok)
     if item["type"] == "reel":
         p = {"media_type": "REELS", "video_url": media_url(item["media"][0]), "caption": cap,
              "share_to_feed": "true", "access_token": tok}
         if item.get("cover"):
             p["cover_url"] = media_url(item["cover"])
-        cid = call("POST", f"{IG}/{uid}/media", p)["id"]
+        cid = call("POST", f"{IGB}/{uid}/media", p)["id"]
         ig_wait(cid, tok)
     elif item["type"] == "carousel":
         kids = []
         for m in item["media"][:10]:
-            k = call("POST", f"{IG}/{uid}/media", {"image_url": media_url(m), "is_carousel_item": "true", "access_token": tok})["id"]
+            k = call("POST", f"{IGB}/{uid}/media", {"image_url": media_url(m), "is_carousel_item": "true", "access_token": tok})["id"]
             kids.append(k)
         for k in kids:
             ig_wait(k, tok, 180)
-        cid = call("POST", f"{IG}/{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids), "caption": cap, "access_token": tok})["id"]
+        cid = call("POST", f"{IGB}/{uid}/media", {"media_type": "CAROUSEL", "children": ",".join(kids), "caption": cap, "access_token": tok})["id"]
         ig_wait(cid, tok, 180)
     elif item["type"] == "image":
-        cid = call("POST", f"{IG}/{uid}/media", {"image_url": media_url(item["media"][0]), "caption": cap, "access_token": tok})["id"]
+        cid = call("POST", f"{IGB}/{uid}/media", {"image_url": media_url(item["media"][0]), "caption": cap, "access_token": tok})["id"]
         ig_wait(cid, tok, 180)
     else:
         raise RuntimeError(f"тип {item['type']} не поддерживается в Instagram")
-    return call("POST", f"{IG}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})["id"]
+    return call("POST", f"{IGB}/{uid}/media_publish", {"creation_id": cid, "access_token": tok})["id"]
 
 
 def post_th(item):
