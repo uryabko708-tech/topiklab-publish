@@ -2,7 +2,12 @@ name: publish
 on:
   schedule:
     - cron: "*/10 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      check:
+        description: "Только проверить ключи (без публикации)"
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -28,7 +33,7 @@ jobs:
           TH_RU_TOKEN: ${{ secrets.TH_RU_TOKEN }}
           TH_EN_ID: ${{ secrets.TH_EN_ID }}
           TH_EN_TOKEN: ${{ secrets.TH_EN_TOKEN }}
-        run: python publish.py
+        run: python publish.py ${{ inputs.check && '--check' || '' }}
       - name: Save state
         run: |
           if [ -n "$(git status --porcelain state.json)" ]; then

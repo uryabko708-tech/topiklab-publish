@@ -110,7 +110,31 @@ def post_th(item):
     return call("POST", f"{TH}/{uid}/threads_publish", {"creation_id": cid, "access_token": tok})["id"]
 
 
+def check():
+    """Проверка ключей без публикации: имя аккаунта и лимит публикаций (нужно право на публикацию)."""
+    for acc in ("ig_ru", "ig_en", "th_ru", "th_en"):
+        try:
+            uid, tok = creds(acc)
+        except KeyError:
+            print(f"{acc}: нет ключей"); continue
+        try:
+            if acc.startswith("ig"):
+                b = ig_base(tok)
+                u = call("GET", f"{b}/{uid}", {"fields": "username", "access_token": tok}).get("username")
+                lim = call("GET", f"{b}/{uid}/content_publishing_limit", {"fields": "quota_usage,config", "access_token": tok})
+            else:
+                u = call("GET", f"{TH}/{uid}", {"fields": "username", "access_token": tok}).get("username")
+                lim = call("GET", f"{TH}/{uid}/threads_publishing_limit", {"fields": "quota_usage,config", "access_token": tok})
+            print(f"{acc}: OK @{u}, лимит {json.dumps(lim.get('data', lim))[:160]}")
+        except Exception as e:
+            print(f"{acc}: ОШИБКА {e}")
+    m = urllib.request.urlopen(media_url(json.loads((ROOT / "schedule.json").read_text())[0]["media"][0]), timeout=30)
+    print("медиа на Pages:", m.status, m.headers.get("Content-Type"))
+
+
 def main():
+    if "--check" in sys.argv:
+        return check()
     sched = json.loads((ROOT / "schedule.json").read_text())
     sp = ROOT / "state.json"
     state = json.loads(sp.read_text()) if sp.exists() else {}
