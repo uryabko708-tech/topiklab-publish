@@ -565,8 +565,7 @@
   "media": [
    "media/17-23.11/w17-23.11-23.11-ru-389f04/video.mp4"
   ],
-  "cover": "media/17-23.11/w17-23.11-23.11-ru-389f04/cover.jpg",
-  "hold": true
+  "cover": "media/17-23.11/w17-23.11-23.11-ru-389f04/cover.jpg"
  },
  {
   "id": "w17-23.11-23.11-en-e1b94e",
@@ -578,7 +577,6 @@
   "media": [
    "media/17-23.11/w17-23.11-23.11-en-e1b94e/video.mp4"
   ],
-  "cover": "media/17-23.11/w17-23.11-23.11-en-e1b94e/cover.jpg",
-  "hold": true
+  "cover": "media/17-23.11/w17-23.11-23.11-en-e1b94e/cover.jpg"
  }
 ]
