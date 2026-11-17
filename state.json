@@ -18,5 +18,11 @@
   "ok": true,
   "post_id": "18077995961596921",
   "at": "2026-11-17T10:45:08.376642+00:00"
+ },
+ "w17-23.11-th_en-17112300": {
+  "ok": false,
+  "tries": 1,
+  "error": "400 {\"error\":{\"message\":\"API access blocked.\",\"code\":200,\"type\":\"OAuthException\",\"error_subcode\":5258005,\"fbtrace_id\":\"A-gvTXCsocNrxLiuUF3Y8ma\"}}",
+  "at": "2026-11-17T14:34:59.040469+00:00"
  }
 }
