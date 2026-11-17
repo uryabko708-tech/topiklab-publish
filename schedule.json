@@ -53,8 +53,21 @@
   "type": "text",
   "time": "2026-11-17T23:00",
   "topic": "Korean Language",
-  "caption": "Recommend a K-drama that actually taught you Korean phrases. I'll start: I say 어떡해 to my cat now.",
-  "hold": true
+  "caption": "Recommend a K-drama that actually taught you Korean phrases. I'll start: I say 어떡해 to my cat now."
+ },
+ {
+  "id": "w17-23.11-18.11-en-8effba",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-18T13:00",
+  "title": "\"밥 먹었어?\" is not about food",
+  "caption": "Did anyone text you this? What did you say? 👇 Everything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-18.11-en-8effba/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-18.11-en-8effba/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-18.11-ru-0aaf67",
@@ -69,26 +82,12 @@
   "cover": "media/17-23.11/w17-23.11-18.11-ru-0aaf67/cover.jpg"
  },
  {
-  "id": "w17-23.11-18.11-en-8effba",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-18T15:00",
-  "title": "\"밥 먹었어?\" is not about food",
-  "caption": "Did anyone text you this? What did you say? 👇 Everything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-18.11-en-8effba/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-18.11-en-8effba/cover.jpg",
-  "hold": true
- },
- {
   "id": "w17-23.11-th_en-18111500",
   "account": "th_en",
   "type": "text",
   "time": "2026-11-18T15:00",
   "topic": "Korean Language",
-  "caption": "선생님 literally means \"born earlier\": 先 before, 生 born. That's why in Korea even a doctor is 의사 선생님.",
-  "hold": true
+  "caption": "선생님 literally means \"born earlier\": 先 before, 生 born. That's why in Korea even a doctor is 의사 선생님."
  },
  {
   "id": "w17-23.11-18.11-ru-27ff13",
@@ -113,7 +112,22 @@
    "media/17-23.11/w17-23.11-18.11-en-abc4f9/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-18.11-en-abc4f9/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
+ },
+ {
+  "id": "w17-23.11-18.11-en-8238cb",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-18T21:00",
+  "title": "Letter to myself on day one of Korean",
+  "caption": "If you could write to yourself on day one of Korean… How long have you been learning? Tell me below 👇\nEverything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-18.11-en-8238cb/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-18.11-en-8238cb/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-18.11-ru-927f9e",
@@ -128,17 +142,24 @@
   "cover": "media/17-23.11/w17-23.11-18.11-ru-927f9e/cover.jpg"
  },
  {
-  "id": "w17-23.11-18.11-en-8238cb",
+  "id": "w17-23.11-19.11-en-c7454b",
   "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-18T23:00",
-  "title": "Letter to myself on day one of Korean",
-  "caption": "If you could write to yourself on day one of Korean… How long have you been learning? Tell me below 👇\nEverything for TOPIK prep in one place: link in bio",
+  "type": "carousel",
+  "time": "2026-11-19T13:30",
+  "title": "Carousel · What's your TOPIK level",
+  "caption": "From 학교 to 양상: which word stopped you? Tell us in the comments 👇 Everything for TOPIK prep in one place: link in bio",
   "media": [
-   "media/17-23.11/w17-23.11-18.11-en-8238cb/video.mp4"
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/01.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/02.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/03.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/04.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/05.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/06.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/07.jpg",
+   "media/17-23.11/w17-23.11-19.11-en-c7454b/08.jpg"
   ],
-  "cover": "media/17-23.11/w17-23.11-18.11-en-8238cb/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-19.11-ru-9d9013",
@@ -181,26 +202,22 @@
    "media/17-23.11/w17-23.11-19.11-en-fda266/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-19.11-en-fda266/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
-  "id": "w17-23.11-19.11-en-c7454b",
+  "id": "w17-23.11-19.11-en-a18898",
   "account": "ig_en",
-  "type": "carousel",
-  "time": "2026-11-19T15:30",
-  "title": "Carousel · What's your TOPIK level",
-  "caption": "From 학교 to 양상: which word stopped you? Tell us in the comments 👇 Everything for TOPIK prep in one place: link in bio",
+  "type": "reel",
+  "time": "2026-11-19T17:00",
+  "title": "Ttoki Day 5 · Everything sounds like listening",
+  "caption": "After a week of TOPIK listening practice, there is no cure 😅 Has this happened to you? Tell me in the comments\nEverything for TOPIK prep in one place: link in bio",
   "media": [
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/01.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/02.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/03.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/04.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/05.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/06.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/07.jpg",
-   "media/17-23.11/w17-23.11-19.11-en-c7454b/08.jpg"
+   "media/17-23.11/w17-23.11-19.11-en-a18898/video.mp4"
   ],
-  "hold": true
+  "cover": "media/17-23.11/w17-23.11-19.11-en-a18898/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-19.11-ru-4be9ef",
@@ -215,26 +232,12 @@
   "cover": "media/17-23.11/w17-23.11-19.11-ru-4be9ef/cover.jpg"
  },
  {
-  "id": "w17-23.11-19.11-en-a18898",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-19T19:00",
-  "title": "Ttoki Day 5 · Everything sounds like listening",
-  "caption": "After a week of TOPIK listening practice, there is no cure 😅 Has this happened to you? Tell me in the comments\nEverything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-19.11-en-a18898/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-19.11-en-a18898/cover.jpg",
-  "hold": true
- },
- {
   "id": "w17-23.11-th_en-19111900",
   "account": "th_en",
   "type": "text",
   "time": "2026-11-19T19:00",
   "topic": "Korean Language",
-  "caption": "I learned 3000 Korean words. Then a barista in Seoul said \"아아\". I thought someone was hurt. (아아 = iced americano)",
-  "hold": true
+  "caption": "I learned 3000 Korean words. Then a barista in Seoul said \"아아\". I thought someone was hurt. (아아 = iced americano)"
  },
  {
   "id": "w17-23.11-20.11-ru-397169",
@@ -259,7 +262,22 @@
    "media/17-23.11/w17-23.11-20.11-en-3c6a6b/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-20.11-en-3c6a6b/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
+ },
+ {
+  "id": "w17-23.11-20.11-en-a86cc4",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-20T17:00",
+  "title": "Chat: one \"yes\" four ways",
+  "caption": "How do you reply? 👇 Everything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-20.11-en-a86cc4/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-20.11-en-a86cc4/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-20.11-ru-ce4cd1",
@@ -272,19 +290,6 @@
    "media/17-23.11/w17-23.11-20.11-ru-ce4cd1/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-20.11-ru-ce4cd1/cover.jpg"
- },
- {
-  "id": "w17-23.11-20.11-en-a86cc4",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-20T19:00",
-  "title": "Chat: one \"yes\" four ways",
-  "caption": "How do you reply? 👇 Everything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-20.11-en-a86cc4/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-20.11-en-a86cc4/cover.jpg",
-  "hold": true
  },
  {
   "id": "w17-23.11-20.11-ru-2b25f3",
@@ -309,7 +314,8 @@
    "media/17-23.11/w17-23.11-20.11-en-785d97/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-20.11-en-785d97/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
   "id": "w17-23.11-th_en-20112300",
@@ -317,8 +323,21 @@
   "type": "text",
   "time": "2026-11-20T23:00",
   "topic": "Korean Language",
-  "caption": "English has \"I miss you\". Korean has 보고 싶어: \"I want to see you\". Which K-drama made this line hit hardest?",
-  "hold": true
+  "caption": "English has \"I miss you\". Korean has 보고 싶어: \"I want to see you\". Which K-drama made this line hit hardest?"
+ },
+ {
+  "id": "w17-23.11-21.11-en-7402cc",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-21T13:00",
+  "title": "Timer: cafe in Seoul",
+  "caption": "How many of the five did you get? 👇 Everything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-21.11-en-7402cc/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-21.11-en-7402cc/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-21.11-ru-2c55c8",
@@ -350,19 +369,6 @@
   ]
  },
  {
-  "id": "w17-23.11-21.11-en-7402cc",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-21T15:00",
-  "title": "Timer: cafe in Seoul",
-  "caption": "How many of the five did you get? 👇 Everything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-21.11-en-7402cc/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-21.11-en-7402cc/cover.jpg",
-  "hold": true
- },
- {
   "id": "w17-23.11-21.11-en-298662",
   "account": "ig_en",
   "type": "carousel",
@@ -378,7 +384,8 @@
    "media/17-23.11/w17-23.11-21.11-en-298662/06.jpg",
    "media/17-23.11/w17-23.11-21.11-en-298662/07.jpg"
   ],
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
   "id": "w17-23.11-21.11-ru-f0727c",
@@ -403,7 +410,8 @@
    "media/17-23.11/w17-23.11-21.11-en-a1321e/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-21.11-en-a1321e/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
   "id": "w17-23.11-th_en-21111900",
@@ -411,8 +419,7 @@
   "type": "text",
   "time": "2026-11-21T19:00",
   "topic": "Korean Language",
-  "caption": "Be honest: how many Korean words did you learn only from K-dramas?",
-  "hold": true
+  "caption": "Be honest: how many Korean words did you learn only from K-dramas?"
  },
  {
   "id": "w17-23.11-21.11-en-960f13",
@@ -425,7 +432,8 @@
    "media/17-23.11/w17-23.11-21.11-en-960f13/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-21.11-en-960f13/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "-"
  },
  {
   "id": "w17-23.11-22.11-ru-38cb49",
@@ -450,7 +458,8 @@
    "media/17-23.11/w17-23.11-22.11-en-5c07fc/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-22.11-en-5c07fc/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
   "id": "w17-23.11-th_en-22111500",
@@ -458,8 +467,21 @@
   "type": "text",
   "time": "2026-11-22T15:00",
   "topic": "Korean Language",
-  "caption": "한국 분들, 외국인이 '괜찮아요'를 이상하게 쓰면 웃기세요? / Koreans, be honest: is it funny when foreigners use 괜찮아요 wrong?",
-  "hold": true
+  "caption": "한국 분들, 외국인이 '괜찮아요'를 이상하게 쓰면 웃기세요? / Koreans, be honest: is it funny when foreigners use 괜찮아요 wrong?"
+ },
+ {
+  "id": "w17-23.11-22.11-en-7d6cf0",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-22T17:00",
+  "title": "오빠: in K-dramas and in life",
+  "caption": "Who do you call 오빠? 😅 Everything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-22.11-en-7d6cf0/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-22.11-en-7d6cf0/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-22.11-ru-208505",
@@ -474,17 +496,37 @@
   "cover": "media/17-23.11/w17-23.11-22.11-ru-208505/cover.jpg"
  },
  {
-  "id": "w17-23.11-22.11-en-7d6cf0",
+  "id": "w17-23.11-23.11-en-83c13f",
   "account": "ig_en",
   "type": "reel",
-  "time": "2026-11-22T19:00",
-  "title": "오빠: in K-dramas and in life",
-  "caption": "Who do you call 오빠? 😅 Everything for TOPIK prep in one place: link in bio",
+  "time": "2026-11-23T13:00",
+  "title": "Timer: moved to Korea",
+  "caption": "How many of the five did you get? 👇 Everything for TOPIK prep in one place: link in bio",
   "media": [
-   "media/17-23.11/w17-23.11-22.11-en-7d6cf0/video.mp4"
+   "media/17-23.11/w17-23.11-23.11-en-83c13f/video.mp4"
   ],
-  "cover": "media/17-23.11/w17-23.11-22.11-en-7d6cf0/cover.jpg",
-  "hold": true
+  "cover": "media/17-23.11/w17-23.11-23.11-en-83c13f/cover.jpg",
+  "hold": true,
+  "en_test": "B"
+ },
+ {
+  "id": "w17-23.11-23.11-en-40520d",
+  "account": "ig_en",
+  "type": "carousel",
+  "time": "2026-11-23T13:30",
+  "title": "Carousel · 5 phrases that sound rude in Korea",
+  "caption": "Which one did you say like this? Tell us in the comments 👇 Everything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-23.11-en-40520d/01.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/02.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/03.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/04.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/05.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/06.jpg",
+   "media/17-23.11/w17-23.11-23.11-en-40520d/07.jpg"
+  ],
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-23.11-ru-860f59",
@@ -516,37 +558,6 @@
   ]
  },
  {
-  "id": "w17-23.11-23.11-en-83c13f",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-23T15:00",
-  "title": "Timer: moved to Korea",
-  "caption": "How many of the five did you get? 👇 Everything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-23.11-en-83c13f/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-23.11-en-83c13f/cover.jpg",
-  "hold": true
- },
- {
-  "id": "w17-23.11-23.11-en-40520d",
-  "account": "ig_en",
-  "type": "carousel",
-  "time": "2026-11-23T15:30",
-  "title": "Carousel · 5 phrases that sound rude in Korea",
-  "caption": "Which one did you say like this? Tell us in the comments 👇 Everything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-23.11-en-40520d/01.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/02.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/03.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/04.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/05.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/06.jpg",
-   "media/17-23.11/w17-23.11-23.11-en-40520d/07.jpg"
-  ],
-  "hold": true
- },
- {
   "id": "w17-23.11-23.11-ru-df50fa",
   "account": "ig_ru",
   "type": "reel",
@@ -569,7 +580,8 @@
    "media/17-23.11/w17-23.11-23.11-en-306fce/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-23.11-en-306fce/cover.jpg",
-  "hold": true
+  "hold": true,
+  "en_test": "A"
  },
  {
   "id": "w17-23.11-th_en-23111900",
@@ -577,8 +589,21 @@
   "type": "text",
   "time": "2026-11-23T19:00",
   "topic": "Korean Language",
-  "caption": "Which Korean word do you use in English? Mine is 대박.",
-  "hold": true
+  "caption": "Which Korean word do you use in English? Mine is 대박."
+ },
+ {
+  "id": "w17-23.11-23.11-en-e1b94e",
+  "account": "ig_en",
+  "type": "reel",
+  "time": "2026-11-23T21:00",
+  "title": "Ttoki · plenty of time before the exam",
+  "caption": "Tag a friend who 'still has time' 👇\nEverything for TOPIK prep in one place: link in bio",
+  "media": [
+   "media/17-23.11/w17-23.11-23.11-en-e1b94e/video.mp4"
+  ],
+  "cover": "media/17-23.11/w17-23.11-23.11-en-e1b94e/cover.jpg",
+  "hold": true,
+  "en_test": "B"
  },
  {
   "id": "w17-23.11-23.11-ru-389f04",
@@ -591,18 +616,5 @@
    "media/17-23.11/w17-23.11-23.11-ru-389f04/video.mp4"
   ],
   "cover": "media/17-23.11/w17-23.11-23.11-ru-389f04/cover.jpg"
- },
- {
-  "id": "w17-23.11-23.11-en-e1b94e",
-  "account": "ig_en",
-  "type": "reel",
-  "time": "2026-11-23T23:00",
-  "title": "Ttoki · plenty of time before the exam",
-  "caption": "Tag a friend who 'still has time' 👇\nEverything for TOPIK prep in one place: link in bio",
-  "media": [
-   "media/17-23.11/w17-23.11-23.11-en-e1b94e/video.mp4"
-  ],
-  "cover": "media/17-23.11/w17-23.11-23.11-en-e1b94e/cover.jpg",
-  "hold": true
  }
 ]
