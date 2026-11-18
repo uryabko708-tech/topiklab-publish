@@ -19,12 +19,6 @@
   "post_id": "18077995961596921",
   "at": "2026-11-17T10:45:08.376642+00:00"
  },
- "w17-23.11-th_en-17112300": {
-  "ok": false,
-  "tries": 3,
-  "error": "400 {\"error\":{\"message\":\"API access blocked.\",\"code\":200,\"type\":\"OAuthException\",\"error_subcode\":5258005,\"fbtrace_id\":\"AOYeXIgjbBXymV3FmFTT-Jz\"}}",
-  "at": "2026-11-17T16:24:09.569158+00:00"
- },
  "w17-23.11-18.11-en-8effba": {
   "ok": true,
   "post_id": "18023626565728623",
