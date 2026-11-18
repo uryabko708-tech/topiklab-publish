@@ -24,5 +24,11 @@
   "tries": 3,
   "error": "400 {\"error\":{\"message\":\"API access blocked.\",\"code\":200,\"type\":\"OAuthException\",\"error_subcode\":5258005,\"fbtrace_id\":\"AOYeXIgjbBXymV3FmFTT-Jz\"}}",
   "at": "2026-11-17T16:24:09.569158+00:00"
+ },
+ "w17-23.11-18.11-en-8effba": {
+  "ok": false,
+  "tries": 1,
+  "error": "400 {\"error\":{\"message\":\"API access blocked.\",\"code\":200,\"type\":\"OAuthException\",\"error_subcode\":5258005,\"fbtrace_id\":\"Ao_z5mkHM3OsRy6nlBZ4gIk\"}}",
+  "at": "2026-11-18T04:29:39.513969+00:00"
  }
 }
