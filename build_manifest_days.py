@@ -131,6 +131,9 @@ def main():
     th = Path(arg("--threads", str(PROMO / "04 Threads" / "_посты_24.11-03.12 v3.json")))
     bad = []
     new = build_days(d0, d1, bad) + build_threads(th, d0, d1)
+    sh = int(arg("--shift", "0"))  # сдвиг дат публикации в днях (пауза), id не меняются
+    for n in new:
+        n["time"] = (datetime.fromisoformat(n["time"]) + timedelta(days=sh)).isoformat(timespec="minutes")
     sp = ROOT / "schedule.json"
     old = json.loads(sp.read_text(encoding="utf-8"))
     ids = {n["id"] for n in new}
