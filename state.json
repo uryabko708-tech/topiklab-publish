@@ -143,5 +143,11 @@
   "ok": true,
   "post_id": "18134285434891862",
   "at": "2026-11-25T03:42:47.115095+00:00"
+ },
+ "d2026-11-24-th_ru-1400-n01": {
+  "ok": false,
+  "tries": 1,
+  "error": "400 {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 18109797623124609 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"AgPBRWqhMGdDAoQukySATUd\"}}",
+  "at": "2026-11-25T05:42:21.446567+00:00"
  }
 }
