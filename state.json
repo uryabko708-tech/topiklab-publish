@@ -165,9 +165,13 @@
   "at": "2026-11-25T14:51:43.198050+00:00"
  },
  "d2026-11-25-th_ru-1400-n03": {
-  "ok": false,
-  "tries": 1,
-  "error": "400 {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 18109899926124609 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"ASGzGs38EnUiJzyQCfawaej\"}}",
-  "at": "2026-11-26T05:42:47.102650+00:00"
+  "ok": true,
+  "post_id": "18121717171784798",
+  "at": "2026-11-26T06:42:00.231215+00:00"
+ },
+ "d2026-11-25-ig_ru-1500-56196d": {
+  "ok": true,
+  "post_id": "18134710972834582",
+  "at": "2026-11-26T06:42:00.231215+00:00"
  }
 }
