@@ -191,8 +191,13 @@
  },
  "d2026-11-26-th_ru-1400-n05": {
   "ok": false,
-  "tries": 1,
-  "error": "400 {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 18110008493124609 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"AgYKU_9yQgLViaLx0aEnff-\"}}",
-  "at": "2026-11-27T05:36:32.159526+00:00"
+  "tries": 2,
+  "error": "400 {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 18110011862124609 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"AwECpgzKJ33wIaM5f7VstAx\"}}",
+  "at": "2026-11-27T06:33:15.214159+00:00"
+ },
+ "d2026-11-26-ig_ru-1500-4b839d": {
+  "ok": true,
+  "post_id": "18163811818505759",
+  "at": "2026-11-27T06:33:15.214159+00:00"
  }
 }
